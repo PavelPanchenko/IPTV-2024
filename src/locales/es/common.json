@@ -1,0 +1,47 @@
+{
+  "nav": {
+    "pricing": "Precios",
+    "dashboard": "Panel",
+    "logout": "Cerrar Sesión",
+    "signIn": "Iniciar Sesión"
+  },
+  "settings": {
+    "title": "Ajustes",
+    "tabs": {
+      "account": "Cuenta",
+      "payment": "Pagos"
+    },
+    "account": {
+      "language": "Idioma",
+      "content": "Configuración de Contenido",
+      "adultContent": "Mostrar Contenido para Adultos",
+      "changePassword": "Cambiar Contraseña",
+      "currentPassword": "Contraseña Actual",
+      "newPassword": "Nueva Contraseña",
+      "confirmPassword": "Confirmar Nueva Contraseña",
+      "updatePassword": "Actualizar Contraseña",
+      "passwordMismatch": "Las nuevas contraseñas no coinciden",
+      "passwordTooShort": "La contraseña debe tener al menos 6 caracteres",
+      "passwordChanged": "Contraseña actualizada con éxito",
+      "passwordChangeFailed": "Error al actualizar la contraseña. Por favor, inténtalo de nuevo."
+    },
+    "payment": {
+      "methods": "Métodos de Pago",
+      "addCard": "Añadir Tarjeta",
+      "noCards": "No hay métodos de pago añadidos",
+      "expires": "Caduca",
+      "cardNumber": "Número de Tarjeta",
+      "expiry": "Fecha de Caducidad",
+      "cvc": "CVC",
+      "cardholderName": "Nombre del Titular",
+      "cancel": "Cancelar",
+      "errors": {
+        "invalidNumber": "Por favor, introduce un número de tarjeta válido de 16 dígitos",
+        "invalidExpiry": "Por favor, introduce una fecha de caducidad válida (MM/AA)",
+        "expired": "La tarjeta ha caducado",
+        "invalidCVC": "Por favor, introduce un CVC válido (3-4 dígitos)",
+        "invalidName": "Por favor, introduce un nombre de titular válido"
+      }
+    }
+  }
+}

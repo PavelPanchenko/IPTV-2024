@@ -1,0 +1,75 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id                Int       @id @default(autoincrement())
+  email             String    @unique
+  username          String
+  password          String
+  balance           Float     @default(0)
+  referralCode      String    @unique @default(uuid())
+  referredBy        String?
+  referralEarnings  Float     @default(0)
+  subscriptionPlan  String?
+  subscriptionEnd   DateTime?
+  createdAt         DateTime  @default(now())
+  updatedAt         DateTime  @updatedAt
+
+  // Relations
+  referrer          User?     @relation("ReferralRelation", fields: [referredBy], references: [referralCode])
+  referrals         User[]    @relation("ReferralRelation")
+  watchHistory      WatchHistory[]
+  favorites         Favorite[]
+
+  @@index([referralCode])
+}
+
+model Channel {
+  id               Int       @id @default(autoincrement())
+  name             String
+  category         String
+  quality          String    // HD, 4K, SD
+  url              String
+  subscriptionLevel String
+  createdAt        DateTime  @default(now())
+  updatedAt        DateTime  @updatedAt
+
+  // Relations
+  watchHistory     WatchHistory[]
+  favorites        Favorite[]
+}
+
+model WatchHistory {
+  id        Int      @id @default(autoincrement())
+  userId    Int
+  channelId Int
+  watchedAt DateTime @default(now())
+
+  // Relations
+  user      User     @relation(fields: [userId], references: [id])
+  channel   Channel  @relation(fields: [channelId], references: [id])
+
+  @@index([userId])
+  @@index([channelId])
+}
+
+model Favorite {
+  id        Int      @id @default(autoincrement())
+  userId    Int
+  channelId Int
+  addedAt   DateTime @default(now())
+
+  // Relations
+  user      User     @relation(fields: [userId], references: [id])
+  channel   Channel  @relation(fields: [channelId], references: [id])
+
+  @@unique([userId, channelId])
+  @@index([userId])
+  @@index([channelId])
+}

@@ -1,0 +1,48 @@
+{
+  "nav": {
+    "pricing": "Тарифы",
+    "dashboard": "Панель",
+    "logout": "Выйти",
+    "signIn": "Войти"
+  },
+  "settings": {
+    "title": "Настройки",
+    "tabs": {
+      "account": "Аккаунт",
+      "playback": "Воспроизведение",
+      "payment": "Оплата"
+    },
+    "account": {
+      "language": "Язык",
+      "content": "Настройки Контента",
+      "adultContent": "Показывать контент для взрослых",
+      "changePassword": "Изменить пароль",
+      "currentPassword": "Текущий пароль",
+      "newPassword": "Новый пароль",
+      "confirmPassword": "Подтвердите новый пароль",
+      "updatePassword": "Обновить пароль",
+      "passwordMismatch": "Новые пароли не совпадают",
+      "passwordTooShort": "Пароль должен содержать не менее 6 символов",
+      "passwordChanged": "Пароль успешно обновлен",
+      "passwordChangeFailed": "Не удалось обновить пароль. Пожалуйста, попробуйте снова."
+    },
+    "playback": {
+      "quality": "Качество воспроизведения",
+      "autoplay": "Автовоспроизведение",
+      "enableAutoplay": "Включить автовоспроизведение",
+      "notifications": "Уведомления",
+      "enableNotifications": "Включить уведомления о воспроизведении"
+    },
+    "payment": {
+      "methods": "Способы оплаты",
+      "addCard": "Добавить карту",
+      "noCards": "Нет добавленных способов оплаты",
+      "expires": "Истекает",
+      "cardNumber": "Номер карты",
+      "expiry": "Срок действия",
+      "cvc": "CVC",
+      "cardholderName": "Имя владельца",
+      "cancel": "Отмена"
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "nav": {
+    "pricing": "Precios",
+    "dashboard": "Panel",
+    "logout": "Cerrar Sesión",
+    "signIn": "Iniciar Sesión"
+  },
+  "settings": {
+    "title": "Ajustes",
+    "tabs": {
+      "account": "Cuenta",
+      "playback": "Reproducción",
+      "payment": "Pagos"
+    },
+    "account": {
+      "language": "Idioma",
+      "content": "Configuración de Contenido",
+      "adultContent": "Mostrar Contenido para Adultos",
+      "changePassword": "Cambiar Contraseña",
+      "currentPassword": "Contraseña Actual",
+      "newPassword": "Nueva Contraseña",
+      "confirmPassword": "Confirmar Nueva Contraseña",
+      "updatePassword": "Actualizar Contraseña",
+      "passwordMismatch": "Las nuevas contraseñas no coinciden",
+      "passwordTooShort": "La contraseña debe tener al menos 6 caracteres",
+      "passwordChanged": "Contraseña actualizada con éxito",
+      "passwordChangeFailed": "Error al actualizar la contraseña. Por favor, inténtalo de nuevo."
+    },
+    "playback": {
+      "quality": "Calidad de Reproducción",
+      "autoplay": "Reproducción Automática",
+      "enableAutoplay": "Activar reproducción automática",
+      "notifications": "Notificaciones",
+      "enableNotifications": "Activar notificaciones de reproducción"
+    },
+    "payment": {
+      "methods": "Métodos de Pago",
+      "addCard": "Añadir Tarjeta",
+      "noCards": "No hay métodos de pago añadidos",
+      "expires": "Caduca",
+      "cardNumber": "Número de Tarjeta",
+      "expiry": "Fecha de Caducidad",
+      "cvc": "CVC",
+      "cardholderName": "Nombre del Titular",
+      "cancel": "Cancelar"
+    }
+  }
+}

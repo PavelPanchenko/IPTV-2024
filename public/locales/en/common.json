@@ -1,0 +1,47 @@
+{
+  "nav": {
+    "pricing": "Pricing",
+    "dashboard": "Dashboard",
+    "logout": "Logout",
+    "signIn": "Sign In"
+  },
+  "settings": {
+    "title": "Settings",
+    "tabs": {
+      "account": "Account",
+      "payment": "Payment"
+    },
+    "account": {
+      "language": "Language",
+      "content": "Content Settings",
+      "adultContent": "Show Adult Content",
+      "changePassword": "Change Password",
+      "currentPassword": "Current Password",
+      "newPassword": "New Password",
+      "confirmPassword": "Confirm New Password",
+      "updatePassword": "Update Password",
+      "passwordMismatch": "New passwords do not match",
+      "passwordTooShort": "Password must be at least 6 characters long",
+      "passwordChanged": "Password successfully updated",
+      "passwordChangeFailed": "Failed to update password. Please try again."
+    },
+    "payment": {
+      "methods": "Payment Methods",
+      "addCard": "Add Card",
+      "noCards": "No payment methods added",
+      "expires": "Expires",
+      "cardNumber": "Card Number",
+      "expiry": "Expiry Date",
+      "cvc": "CVC",
+      "cardholderName": "Cardholder Name",
+      "cancel": "Cancel",
+      "errors": {
+        "invalidNumber": "Please enter a valid 16-digit card number",
+        "invalidExpiry": "Please enter a valid expiry date (MM/YY)",
+        "expired": "Card has expired",
+        "invalidCVC": "Please enter a valid CVC (3-4 digits)",
+        "invalidName": "Please enter a valid cardholder name"
+      }
+    }
+  }
+}
